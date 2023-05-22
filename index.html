@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript">
+            var options = {
+                "sliderDuration": {
+                    description: "Slider duration",
+                    select: ".slider",
+                    attr: 'data-duration',
+                    type: 'int',
+                    values: [1000, 10000],
+                    default: 4000,
+                },
+                "loadingDuration": {
+                    description: "Loading duration",
+                    select: ".loading",
+                    attr: 'data-duration',
+                    type: 'int',
+                    values: [100, 10000],
+                    default: 3000,
+                },
+                "mainColor": {
+                    description: "Main color",
+                    select: ".loading",
+                    attr: 'data-color',
+                    type: 'color',
+                    default: "#abff3e",
+                },
+                "date": {
+                	description: "Date",
+                	select: ".countdown",
+                	attr: 'date',
+                	type: 'date',
+                	default: '2029-01-01',
+                },
+                "countdownColor": {
+                    description: "Countdown color",
+                    select: ".countdown",
+                    attr: 'data-color',
+                    type: 'color',
+                    default: "#abff3e",
+                }, 
+            };
+        </script>
+        <script type="text/javascript" src="http://preview.stephino.com/js/frame.js"></script>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <title>Scartz</title>
+        <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+        <link rel="icon" type="image/png" href="favicon.ico">
+        <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
+        <link rel="stylesheet" href="css/bootstrap-modal.css"/>
+        <link rel="stylesheet" href="css/ie.css"/>
+        <link rel="stylesheet" href="css/jquery.jqplot.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body class="red">
+        <div id="page_wrap">
+            <div class="loading" data-color="#abff3e" data-courtain="1" data-duration="3000"></div>
+            <div class="slider" data-duration="7000">
+                <img src="img/slider/1.jpg"/>
+                <img src="img/slider/2.jpg"/>
+                <img src="img/slider/3.jpg"/>
+                <img src="img/slider/4.jpg"/>
+            </div>
+            <section class="container row-fluid">
+                <h1>Prepare to be amazed!</h1>
+                <div class="clearfix"></div>
+                <div class="countdown" date="2029-01-01" data-color="#abff3e"></div>
+                <div class="clearfix"></div>
+                <h3>We will launch soon. Check out the section below for more information.</h3>
+            </section>
+            <section class="container row-fluid">
+                <div class="offset2 span8">
+                    <h1>Newsletter</h1>
+                    <h3>If you'd like to hear more from us, please send us your e-mail address.</h3>
+                    <form method="post" action="/newsletter.php" class="validate text-center">
+                        <input class="input-block-level" name="email" type="email" placeholder="E-mail" required /><br/>
+                        <span class="btn  btn-large btn-block submit"><i class="icon-envelope icon-white"></i> Submit</span>
+                    </form>
+                    <br/><br/>
+                    <p class="center">
+                        <!--<a href="javascript:void(0);" class="social youtube">Youtube</a>-->
+                        <!--<a href="javascript:void(0);" class="social yandex">Yandex</a>-->
+                        <!--<a href="javascript:void(0);" class="social vkontakte">Vkontakte</a>-->
+                        <!--<a href="javascript:void(0);" class="social vk">Vk</a>-->
+                        <a href="javascript:void(0);" class="social vimeo">Vimeo</a>
+                        <a href="javascript:void(0);" class="social twitter">Twitter</a>
+                        <a href="javascript:void(0);" class="social tumblr">Tumblr</a>
+                        <!--<a href="javascript:void(0);" class="social steam">Steam</a>-->
+                        <a href="javascript:void(0);" class="social stackoverflow">Stackoverflow</a>
+                        <!--<a href="javascript:void(0);" class="social soundcloud">Soundcloud</a>-->
+                        <a href="javascript:void(0);" class="social skype">Skype</a>
+                        <!--<a href="javascript:void(0);" class="social share">Share</a>-->
+                        <!--<a href="javascript:void(0);" class="social rss">Rss</a>-->
+                        <!--<a href="javascript:void(0);" class="social readability">Readability</a>-->
+                        <!--<a href="javascript:void(0);" class="social read-it-later">Read-it-Later</a>-->
+                        <!--<a href="javascript:void(0);" class="social pocket">Pocket</a>-->
+                        <a href="javascript:void(0);" class="social pinterest">Pinterest</a>
+                        <a href="javascript:void(0);" class="social picasa">Picasa</a>
+                        <!--<a href="javascript:void(0);" class="social openid">Openid</a>-->
+                        <!--<a href="javascript:void(0);" class="social myspace">Myspace</a>-->
+                        <!--<a href="javascript:void(0);" class="social moikrug">Moikrug</a>-->
+                        <a href="javascript:void(0);" class="social linked-in">Linked-in</a>
+                        <!--<a href="javascript:void(0);" class="social lifejournal">Lifejournal</a>-->
+                        <!--<a href="javascript:void(0);" class="social lastfm">Lastfm</a>-->
+                        <!--<a href="javascript:void(0);" class="social jabber">Jabber</a>-->
+                        <!--<a href="javascript:void(0);" class="social instapaper">Instapaper</a>-->
+                        <!--<a href="javascript:void(0);" class="social habrahabr">Habrahabr</a>-->
+                        <!--<a href="javascript:void(0);" class="social google">Google</a>-->
+                        <!--<a href="javascript:void(0);" class="social github-octoface">Github-octoface</a>-->
+                        <!--<a href="javascript:void(0);" class="social github-circle">Github-circle</a>-->
+                        <!--<a href="javascript:void(0);" class="social foursquare">Foursquare</a>-->
+                        <a href="javascript:void(0);" class="social flickr">Flickr</a>
+                        <!--<a href="javascript:void(0);" class="social flattr">Flattr</a>-->
+                        <a href="javascript:void(0);" class="social facebook">Facebook</a>
+                        <!--<a href="javascript:void(0);" class="social evernote">Evernote</a>-->
+                        <!--<a href="javascript:void(0);" class="social email">Email</a>-->
+                        <a href="javascript:void(0);" class="social dropbox">Dropbox</a>
+                        <!--<a href="javascript:void(0);" class="social blogspot">Blogspot</a>-->
+                        <!--<a href="javascript:void(0);" class="social bitbucket">Bitbucket</a>-->
+                        <!--<a href="javascript:void(0);" class="social youtube-play">Youtube-play</a>-->
+                    </p>
+                </div>
+            </section>
+            <section class="container row-fluid">
+                <div class="offset2 span8">
+                    <h1>Contact</h1>
+                    <h3>Don't hesitate to contact us.</h3>
+                    <form method="post" action="/contact.php" class="validate text-center">
+                        <input class="input-block-level" name="name" type="text" placeholder="Name" required /><br/>
+                        <input class="input-block-level" name="email" type="email" placeholder="E-mail" required /><br/>
+                        <textarea class="input-block-level" name="content" placeholder="Your message" required ></textarea>
+                        <span class="btn  btn-large btn-block submit"><i class="icon-ok icon-white"></i> Send</span>
+                    </form>
+                </div>
+            </section>
+        </div>
+        
+        <!--About us-->
+        <div class="modal hide fade" id="about-us" tabindex="1" role="dialog" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3>About us</h3>
+            </div>
+            <div class="modal-body">
+                We are a creative agency based in Europe.<br/>
+                Lorem ipsum dolor sit amet is the way we start all of our sentences.<br/><br/>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/><br/>
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br/>
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+        </div>
+        
+        <!-- Map -->
+        <div class="modal hide fade" id="map" tabindex="1" role="dialog" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3>Map</h3>
+            </div>
+            <div class="modal-body">
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;t=m&amp;ll=40.400425,-74.085617&amp;spn=0.183016,0.291138&amp;z=11&amp;output=embed"></iframe>
+            </div>
+        </div>
+        
+        <!--Javascript-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-modal.js"></script>
+        <script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
+        <script type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+        <script type="text/javascript" src="js/jqplot.donutRenderer.min.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/additional-methods.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
+    </body>
+</html>
